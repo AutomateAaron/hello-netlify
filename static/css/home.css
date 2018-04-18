@@ -1,0 +1,107 @@
+/*
+#hero {
+    padding:0;
+    margin:0;
+
+    top:0;
+    left:0;
+
+    width: 100%;
+    height: 100%;
+    background:rgba(255,255,255,0.5);
+
+}
+
+/* Section */
+.section-title {
+    text-align: center;
+}
+
+.section-title > h1 {
+    margin-bottom: 64px;
+    font-size: 50px;
+    line-height: 50px;
+    position: relative;
+}
+
+.section-title > p {
+    max-width: 740px;
+    margin: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: 21px;
+    line-height: 32px;
+    color: rgba(0, 0, 0, 0.5);
+    margin-bottom: 32px;
+    position: relative;
+}
+
+.section-title > h1::after {
+    content: "";
+    background: url(/img/section-divider.png) no-repeat 0 0;
+    height: 15px;
+    width: 113px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -40px;
+    margin: 0 auto;
+}
+
+.section-padding {
+	padding: 100px 0 64px;
+}
+
+.dark-back {
+    background: #f8f8f8
+}
+
+
+/* Landing */
+
+#landing > div > div {
+    padding: 100px 0 100px;
+}
+.landing-item {
+    text-align: center;
+}
+.landing-item > img {
+    margin: auto;
+    width: 64%;
+}
+#landing-text {
+    background: #400080;
+    
+}
+#landing-text > div {
+    margin: auto;
+}
+
+#landing-text > div> h1, p {
+    color: #fff;
+}
+
+/* Works */
+
+#works {
+    background: #f8f8f8
+}
+
+.works-item {
+    /*outline: dotted;
+    min-height: 317px;
+    */
+
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+    height: 317px;
+}
+#so-card-widget > div > div.so-header > h4 {
+    text-transform: none;
+}
+#so-card-widget > div > div > .so-display-name {
+    padding: 10% 0;
+    height: auto;
+}
+#so-card-widget {
+    height: 400px;
+}

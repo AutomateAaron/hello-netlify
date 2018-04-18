@@ -31,4 +31,6 @@ class Foo:
 
  ---
 
+## Heading 2
+
  This is a new thing!

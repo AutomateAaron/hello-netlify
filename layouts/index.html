@@ -1,0 +1,117 @@
+{{ define "custom-head"}}
+  <link href="{{ "/css/home.css" | relURL }}" rel="stylesheet" type="text/css">
+  <script src="//cdn.jsdelivr.net/github-cards/latest/widget.js" defer></script>
+  
+{{end}}
+{{ define "title"}} {{ .Site.Title}} {{end}}
+{{ define "header"}} {{ partial "header" .}} {{end}}
+{{ define "main"}}
+
+
+    
+
+<section id="landing">
+
+  <div class="row gutters">
+    <div id="landing-image" class="col col-6 landing-item">
+      <img src="/img/icon.png">
+    </div>
+    <div id="landing-text" class="col col-6 landing-item">
+      <div>
+        <h1>Aaron N. Brock</h1>
+        <p>But why?</p>
+      </div>
+    </div>
+  </div>
+
+
+</section>
+
+
+
+<!--
+  <div class="message focus" data-component="message"> <span class="close small"></span>
+    <a class="button inverted small " href="https://imperavi.com/kube/" >Kube </a> from <a href="https://imperavi.com/">imperavi</a> is an awesome <mark>CSS & JS Framework</mark> and i designed this template for <a href="https://gohugo.io">hugo</a> with the same original philosophy !
+  </div>
+-->
+<section id="about" class="section-padding">
+    <div class="section-title">
+      <h1>About</h1>
+      <p>What I've been up to.</p>
+    </div>
+  </section>
+
+  <section id="works" class="section-padding">
+    <div class="section-title">
+      <h1>Works</h1>
+      <p>What I've been up to.</p>
+    </div>
+    
+    <div class="row align-center">
+      <div class="col-11">
+        <div class="row gutters">
+          <div class="col col-3 works-item">
+            <iframe width="100%" height="317" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/288988294&amp;color=4d0083&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+          </div>
+          <div class="col col-3 works-item">
+            <a class="twitter-timeline" data-height="317" data-dnt="true" data-link-color="#6000c0" href="https://twitter.com/AaronNBrock?ref_src=twsrc%5Etfw">Tweets by AaronNBrock</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+          </div>
+          <div class="col col-3 works-item">
+            <div class="github-card" data-github="AaronNBrock" data-width="100%" data-height="317" data-theme="medium"></div>
+          </div>
+          <div class="col col-3 works-item">
+            <div id="so-card-widget" data-userid="7607701" data-height="317" data-theme="default"></div>
+            <script type="text/javascript" src="//mudassir0909.github.io/stackoverflow-card/dist/1.0.0/so-card-widget.min.js"></script>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <div id="kube-features">
+    <div class="row gutters">
+      <div class="col col-4 item">
+        <figure>
+          <img alt="Baseline" height="48" src="{{ "/img/kube/icon-baseline.png" | relURL }}" width="48">
+        </figure>
+        <h3>Horizontal Rhythm</h3>
+        <p>In Kube horizontal rhythm based on a 4px vertical grid is something that we are truly proud of.</p>
+      </div>
+      <div class="col col-4 item">
+        <figure>
+          <img alt="Typography" height="48" src="{{ "/img/kube/icon-typo.png" | relURL }}" width="48">
+        </figure>
+        <h3>Typography</h3>
+        <p>We obsess over typography, and it shows throughout Kube.</p>
+      </div>
+      <div class="col col-4 item">
+        <figure>
+          <img alt="Minimalism" height="48" src="{{ "/img/kube/icon-minimalism.png" | relURL }}" width="48">
+        </figure>
+        <h3>Minimalism</h3>
+        <p>We strongly believe in minimalism as a general concept as well as a practical approach to everyday life.</p>
+      </div>
+    </div>
+    
+<!--
+    <div class="row gutters">
+      <div class="col col-4 item">
+        <h4>Mobile-first Design</h4>
+        <p>Every element in kube is mobile-first and fully embraces latest and greatest tech.</p>
+      </div>
+      <div class="col col-4 item">
+        <h4>Cross-browser</h4>
+        <p>Kube works in all modern browsers, both desktop and mobile, including latest Chrome, Firefox, Safari, Opera, IE and Edge.</p>
+      </div>
+      <div class="col col-4 item">
+        <h4>License</h4>
+        <p>Kube licensed under <a href="https://opensource.org/licenses/MIT">MIT</a>.<br>
+      Kube Framework is absolutely free for personal or commercial use.</p>
+      </div>
+    </div>
+  -->
+
+  </div>
+{{ end }}
+{{ define "footer"}} {{ partial "footer" .}} {{end}}

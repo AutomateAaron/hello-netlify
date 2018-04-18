@@ -1,0 +1,76 @@
+/* #1c86f2 -> #6000c0 */
+.focus {
+    color: #6000c0; 
+}
+
+.bg-focus {
+    background-color: #6000c0; 
+}
+
+samp {
+    /* color: #fff; */
+    background: #6000c0; 
+}
+
+select:focus {
+    /* outline: none;
+    background-color: #fff; */
+    border-color: #6000c0;
+    box-shadow: 0 0 1px #6000c0 inset; 
+}
+
+.button {
+    /* font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 15px;
+    color: #fff; */
+    background-color: #6000c0;
+    /* border-radius: 3px;
+    min-height: 40px;
+    padding: 8px 20px;
+    font-weight: 500;
+    text-decoration: none;
+    cursor: pointer;
+    display: inline-block;
+    line-height: 20px;
+    border: 1px solid transparent;
+    vertical-align: middle;
+    -webkit-appearance: none; */
+}
+
+.button.outline {
+    /* background: none;
+    border-width: 2px; */
+    border-color: #6000c0;
+    color: #6000c0; 
+}
+  .button.outline:hover {
+    background: none;
+    color: #6000c099;
+    border-color: #6000c080; }
+  .button.outline:disabled, .button.outline.disabled {
+    background: none;
+    color: #6000c0b3;
+    border-color: #6000c080; }
+
+.label.focus {
+    background: #6000c0; 
+    /*color: #fff; */
+}
+    .label.focus.tag, .label.focus.outline {
+      /* background: none; */
+      border-color: #6000c0;
+      color: #6000c0; 
+    }
+
+.message.focus {
+    background: #6000c0;
+    /* color: #fff; */
+}
+
+/* #4ca0f5 -> #400080 */
+.button:hover {
+    outline: none;
+    text-decoration: none;
+    color: #fff;
+    background-color: #400080; 
+}

@@ -8,9 +8,12 @@
   <div id="components">
     <div class="row gutters">
       {{ range .Data.Pages.ByWeight }}
-      <div class="col col-4 item">
+      <div class="col col-12 item">
         <h4><a href="{{ .Permalink }}">{{ .Title }}</a></h4>
         <p>{{ .Params.description }}</p>
+        <time datetime="{{ dateFormat "2006-01-02T15:04:05-07:00" (default .Date (.PublishDate)) }}">
+            {{ dateFormat "2 Jan, 2006" (default .Date (.PublishDate)) }}
+        </time>
       </div>
       {{ end }}
 
