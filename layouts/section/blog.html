@@ -4,19 +4,19 @@
 <div id="main">
   <div id="hero">
     <h1>Blog</h1>
+    <p>Stories and writings of mine...  You're probably looking for Docs.</p>
   </div>
   <div id="components">
     <div class="row gutters">
       {{ range .Data.Pages.ByWeight }}
-      <div class="col col-12 item">
-        <h4><a href="{{ .Permalink }}">{{ .Title }}</a></h4>
-        <p>{{ .Params.description }}</p>
-        <time datetime="{{ dateFormat "2006-01-02T15:04:05-07:00" (default .Date (.PublishDate)) }}">
-            {{ dateFormat "2 Jan, 2006" (default .Date (.PublishDate)) }}
-        </time>
-      </div>
+        <a class="col col-12 item" href="{{ .Permalink }}">
+          <h4>{{ .Title }}</h4>
+          <p>{{ .Params.description }}</p>
+          <time datetime="{{ dateFormat "2006-01-02T15:04:05-07:00" (default .Date (.PublishDate)) }}">
+              {{ dateFormat "2 Jan, 2006" (default .Date (.PublishDate)) }}
+          </time>
+        </a>
       {{ end }}
-
     </div>
   </div>
 </div>

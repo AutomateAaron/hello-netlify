@@ -8,10 +8,10 @@
   <div id="components">
     <div class="row gutters">
       {{ range .Data.Pages.ByWeight }}
-      <div class="col col-4 item">
-        <h4><a href="{{ .Permalink }}">{{ .Title }}</a></h4>
+      <a class="col col-4 item" href="{{ .Permalink }}">
+        <h4>{{ .Title }}</h4>
         <p>{{ .Params.description }}</p>
-      </div>
+      </a>
       {{ end }}
 
     </div>

@@ -100,7 +100,6 @@
     padding: 0 24px;
 }
 
-
 .works-item {
     /*outline: dotted;
     min-height: 317px;
@@ -109,6 +108,7 @@
     box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
     height: 317px;
 }
+
 #so-card-widget > div > div.so-header > h4 {
     text-transform: none;
 }
@@ -118,4 +118,33 @@
 }
 #so-card-widget {
     height: 400px;
+}
+
+/* About */
+#contact {
+    background: #f8f8f8;
+}
+#contact-items {
+    margin-top: 104px;
+    text-align: center;
+}
+.contact-item {
+    padding: 0 24px;
+}
+/* About:map */
+.location-map {
+    padding: 4px;
+    border: 1px solid #eee;
+    border-bottom: 3px double #eee;
+}
+.map-canvas {
+    height: 350px;
+}
+
+.contact-section address,
+.contact-section .contact-number {
+    overflow: hidden;
+    line-height: 30px;
+    font-weight: 400;
+    margin-bottom: 45px
 }

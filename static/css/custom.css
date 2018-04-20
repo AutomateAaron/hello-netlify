@@ -5,3 +5,7 @@
 .dark-back {
     background: #f8f8f8
 }
+
+#components > div > a {
+    text-decoration: none;
+}

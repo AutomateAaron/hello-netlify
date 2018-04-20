@@ -1,7 +1,8 @@
 {{ define "custom-head"}}
   <link href="{{ "/css/home.css" | relURL }}" rel="stylesheet" type="text/css">
   <script src="//cdn.jsdelivr.net/github-cards/latest/widget.js" defer></script>
-  
+  <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;key=AIzaSyCCwLOg2skpeiGamZq5M5v_UTItItkA_0k" defer></script>
+  <script src="{{ "/js/home.js" | relURL }}" defer></script>
 {{end}}
 {{ define "title"}} {{ .Site.Title}} {{end}}
 {{ define "header"}} {{ partial "header" .}} {{end}}
@@ -18,7 +19,7 @@
     <p>{{.Description}}</p>
   </div>
   <div id="action-buttons">
-    <a class="button primary big" href="https://github.com/jeblister/kube/releases" onclick="_gaq.push(['_trackEvent', 'kube', 'download']);">Blog</a> <a class="button outline big" href="https://github.com/jeblister/kube" onclick="_gaq.push(['_trackEvent', 'kube', 'github']);">Contact</a>
+    <a class="button primary big" href="/blog" onclick="_gaq.push(['_trackEvent', 'kube', 'download']);">Blog</a> <a class="button outline big" href="/#contact" onclick="_gaq.push(['_trackEvent', 'kube', 'github']);">Contact</a>
     <p>Zip-archive, includes all the source and site example files</p>
   </div>
 
@@ -95,12 +96,57 @@
         <p>Send me a message.</p>
       </div>
       
-      <div>
-        <ul>
-          <li>Potato</li>
-          <li>Mushroom</li>
-        </ul>
+
+      <div class="contact-items">
+        <div class="row gutters">
+          <div class="col col-6 contact-item">
+            
+            <address>
+              <strong>Email:</strong>
+              <a href="mailto:Aaron@AaronNBrock.com" target="_blank">Aaron@AaronNBrock.com</a>
+              <br>
+            </address>
+            <form name="contact-form" id="contactForm" action="https://formspree.io/Aaron@AaronNBrock.com" method="POST">
+              <div class="form-item">
+                <label for="name">Name</label>
+                <input type="text" name="name" class="form-control" id="name" required="">
+              </div>
+              <div class="form-item">
+                <label for="email">Email</label>
+                <input type="email" name="email" class="form-control" id="email" required="">
+              </div>
+              <div class="form-item">
+                <label for="message">Message</label>
+                <textarea name="message" class="form-control" id="message" rows="5" required=""></textarea>
+              </div>
+              <button type="submit" name="submit">Send Message</button>
+            </form>
+          </div>
+
+
+          <div class="col col-6 contact-item">
+              <address>
+                <strong>Location:</strong>
+                Princeton NJ, USA<br>
+              </address>
+  
+            <div class="row">
+              <div class="col col-12">
+                <div class="location-map">
+                  <div id="mapCanvas" class="map-canvas"></div>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
       </div>
+
+
+
+    </div><!-- /.contact-form -->
+  </div><!-- /.col-md-6 -->
 
 
   </section>
