@@ -59,33 +59,47 @@
 
 /* Landing */
 
-#landing > div > div {
-    padding: 100px 0 100px;
-}
-.landing-item {
-    text-align: center;
-}
-.landing-item > img {
-    margin: auto;
-    width: 64%;
-}
-#landing-text {
-    background: #400080;
-    
-}
-#landing-text > div {
-    margin: auto;
+#hero > img {
+    width: 50%;
+    max-width: 512px;
+    margin-bottom: 32px;
 }
 
-#landing-text > div> h1, p {
-    color: #fff;
+#hero > img::after {
+    content: "";
+    background: url(/img/section-divider.png) no-repeat 0 0;
+    height: 15px;
+    width: 113px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -80px;
+    margin: 0 auto;
+}
+
+
+/* About */
+#about {
+    background: #f8f8f8;
+}
+#about-items {
+    margin-top: 104px;
+    text-align: center;
+}
+.about-item {
+    padding: 0 24px;
 }
 
 /* Works */
 
 #works {
-    background: #f8f8f8
+    
 }
+
+.works-items {
+    padding: 0 24px;
+}
+
 
 .works-item {
     /*outline: dotted;

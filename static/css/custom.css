@@ -1,0 +1,7 @@
+#hero p::before {
+    background: #6000c0;
+}
+
+.dark-back {
+    background: #f8f8f8
+}

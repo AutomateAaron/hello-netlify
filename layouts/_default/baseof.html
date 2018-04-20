@@ -51,7 +51,7 @@
 
 
 <body>
-  <header>{{ block "header" . }}{{ end }}</header>
+  <header>{{ block "header" . }} {{ partial "header" .}} {{ end }}</header>
   <main>{{ block "main" . }}{{ end }}</main>
   <footer>{{ block "footer" . }}{{ end }}</footer>
 
