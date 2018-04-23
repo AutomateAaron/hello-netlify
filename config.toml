@@ -17,10 +17,11 @@ pygmentsStyle="tango"
   twitter = "AaronNBrock" # add your twitter profile
   email = "AaronNBrock@gmail.com"
 
-[[menu.main]]
-    name = "Docs"
-    weight = -100
-    url = "/docs/"
+#[[menu.main]]
+#    name = "Docs"
+#    weight = -100
+#    url = "/docs/"
+
 [[menu.main]]
     name = "Blog"
     weight = -100
