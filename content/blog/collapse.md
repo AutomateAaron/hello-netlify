@@ -1,6 +1,6 @@
 +++
 date = "2017-04-10T16:42:50+01:00"
-draft = false
+draft = true
 weight = 180
 description = "Smoothly and reliably collapse elements for extra convenience"
 title = "Collapse"

@@ -1,6 +1,6 @@
 +++
 date = "2017-04-10T16:41:34+01:00"
-draft = false
+draft = true
 weight = 90
 description = "Versatile and refined messages, ideal for daily use"
 title = "Messages"
